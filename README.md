@@ -1,8 +1,54 @@
-# React + Vite
+<h1 align="center">
+  Disney+ Redesign
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img alt="" src=".github/preview.png" width="100%">
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+ <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=3793E8&labelColor=06187B" alt="License">
+  
+  <img src="https://img.shields.io/github/forks/birobirobiro/live-twitch-lp-gpt3?label=forks&message=MIT&color=3793E8&labelColor=06187B" alt="Forks">
+
+  <img src="https://img.shields.io/github/stars/birobirobiro/live-twitch-lp-gpt3?label=stars&message=MIT&color=3793E8&labelColor=06187B " alt="Stars">
+</p>
+
+<p align="center">
+  <img alt="" src=".github/logo-plane.svg" width="10%">
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="" src=".github/preview-desktop.png" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+
+## 🚧 Projeto
+
+Live Preview: https://live-twitch-disney-plus-redesign.vercel.app/
+
+## 🎨 Inspiração:
+
+Figma: https://www.figma.com/file/AfcZjKNRxDWOSSI0vrnrls/Disney%2B-Streaming-Redesign-(Community)
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Feito com ♥ by birobirobiro
