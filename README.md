@@ -40,7 +40,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto
 
-Live Preview: https://live-twitch-disney-plus-redesign.vercel.app/
+Live Preview: https://cartoon-movies.vercel.app/
 
 ## 🎨 Inspiração:
 
