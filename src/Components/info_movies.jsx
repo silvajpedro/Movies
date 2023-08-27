@@ -1,4 +1,4 @@
-// backgrouns
+// backgrounds
 import background_luca from "../assets/background_luca.jpg";
 import background_spirit from "../assets/background_spirit.jpg";
 import background_din from "../assets/background_din.jpeg"

@@ -21,11 +21,11 @@ export default function Index() {
           
           <S.FirstSectionAsideLeftBox>
             
-            <S.LogoDisney src={logoDisney} alt="" />
+            <S.LogoDisney src={logoDisney} alt="disney icon" />
 
             <div>
               <figure>
-                <S.ImdbIcon src={imdbIcon} alt="" />
+                <S.ImdbIcon src={imdbIcon} alt="imbd icon" />
                 <figcaption>{movies[idInfoMovies].rating}</figcaption>
               </figure>
               <p>{movies[idInfoMovies].year} - Kids - Movie</p>
