@@ -40,7 +40,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto
 
-Live Preview: https://cartoon-movies.vercel.app/
+Live Preview: https://disney-movies-g2hwguzwj-silvajpedro.vercel.app/
 
 ## 🎨 Inspiração:
 
