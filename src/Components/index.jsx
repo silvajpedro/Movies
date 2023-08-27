@@ -1,93 +1,93 @@
 import React, { useState } from "react";
 import * as S from "./index_style.jsx";
+import { movies } from "./info_movies.jsx";
+
+// logos
 import logoDisney from "../assets/logo.png";
+import spiritLogo from "../assets/spirit_logo1.svg";
 import imdbIcon from "../assets/IMDB-icon.png";
 import luca_title from "../assets/luca.png";
 import menu from "../assets/hamburguer-menu.svg";
 
-import bob from "../assets/11.svg";
-import raya from "../assets/12.svg";
-import din from "../assets/13.svg";
-import spirit from "../assets/14.svg";
-import luca from "../assets/15.svg";
-
-// backgrounds
-import background_luca from "../assets/background_luca.jpg";
-import background_spirit from "../assets/background_spirit.jpg";
-import background_din from "../assets/background_din.jpeg"
-import background_raya from "../assets/background_raya1.jpg"
-import background_spongebob from "../assets/background_spongebob.jpg"
-
 export default function Index() {
-  
-    const [modalBackImg, setmodalBackImg] = useState(background_luca);
-
+  const [modalBackImg, setmodalBackImg] = useState(movies[4].background);
+  const [idInfoMovies, setidInfoMovies] = useState(4);
+  const [modalMenuMovies, setModalMenuMovies] = useState(false);
   return (
     <>
       <S.GlobalStyle />
+
       <S.MainBox mainBackImg={modalBackImg}>
+        
         <S.AsideLeftBox>
+          
           <S.FirstSectionAsideLeftBox>
+            
             <S.LogoDisney src={logoDisney} alt="" />
 
             <div>
               <figure>
                 <S.ImdbIcon src={imdbIcon} alt="" />
-                <figcaption>8.8</figcaption>
+                <figcaption>{movies[idInfoMovies].rating}</figcaption>
               </figure>
-              <p>2021 - Kids - Movie</p>
+              <p>{movies[idInfoMovies].year} - Kids - Movie</p>
             </div>
+
           </S.FirstSectionAsideLeftBox>
 
           <S.SecondSectionAsideLeftBox>
+            
             <div>
+              
               <figure>
-                <S.MovieName src={luca_title} alt="" />
-                <figcaption>
-                  Luca and Alberto dream of a life of freedom, a life of
-                  adventure — and, most of all, a life with a Vespa to ride.
-                </figcaption>
+                
+                <S.MovieName word={movies[idInfoMovies].title}>{
+                movies[idInfoMovies].title}
+                </S.MovieName>
+
+                <figcaption>{movies[idInfoMovies].summary}</figcaption>
               </figure>
-              <S.WatchNowButton>
-                <span>▶</span> Watch Now
-              </S.WatchNowButton>
+
+              <a href={movies[idInfoMovies].link}>
+                <S.WatchNowButton>
+                  <span>▶</span> Watch Now
+                </S.WatchNowButton>
+              </a>
+            
             </div>
           </S.SecondSectionAsideLeftBox>
         </S.AsideLeftBox>
 
         <S.AsideRightBox>
           <div>
-            <img src={menu} alt="" />
+            <img
+              src={menu}
+              onClick={() => setModalMenuMovies(!modalMenuMovies)}
+              alt=""
+            />
           </div>
-          <S.FirstSectionAsideRightBox>
-            <h2>Movies</h2>
 
-            <S.ImagesMovie backImg={spirit} onClick={() => setmodalBackImg(background_spirit)}>
-              <figcaption>Kids</figcaption>
-              <figcaption>Spirit Untamed</figcaption>
-            </S.ImagesMovie>
+          {modalMenuMovies && (
+            <S.FirstSectionAsideRightBox>
+              <h2>Movies</h2>
 
-            <S.ImagesMovie backImg={din} onClick={()=> setmodalBackImg(background_din)}>
-              <figcaption>Kids</figcaption>
-              <figcaption>Wish Dragon</figcaption>
-            </S.ImagesMovie>
+              {movies.map((item, id) => (
+                <S.ImagesMovie
+                  backImg={item.movieImage}
+                  onClick={() => {
+                    setmodalBackImg(movies[id].background);
+                    setidInfoMovies(id);
+                  }}>
 
-            <S.ImagesMovie backImg={raya} onClick={()=> setmodalBackImg(background_raya)}>
-              <figcaption>Kids</figcaption>
-              <figcaption>Raya and the Last Dragon</figcaption>
-            </S.ImagesMovie>
-
-            <S.ImagesMovie backImg={bob} onClick={()=> setmodalBackImg(background_spongebob)}>
-              <figcaption>Kids</figcaption>
-              <figcaption>Sponge on the run</figcaption>
-            </S.ImagesMovie>
-
-            <S.ImagesMovie
-              backImg={luca} onClick={() => setmodalBackImg(background_luca)} >
-              <figcaption>Kids</figcaption>
-              <figcaption>Luca</figcaption>
-            </S.ImagesMovie>
-          </S.FirstSectionAsideRightBox>
+                  <figcaption>{item.type}</figcaption>
+                  <figcaption>{item.title}</figcaption>
+                
+                </S.ImagesMovie>
+              ))}
+            
+            </S.FirstSectionAsideRightBox>
+          )}
+        
         </S.AsideRightBox>
       </S.MainBox>
     </>

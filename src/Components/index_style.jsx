@@ -18,7 +18,8 @@ export const MainBox = styled.main`
   height: 100vh;
   background-image: url(${(props) => props.mainBackImg});
   background-size: 100% 100%;
-  transition: ease-in-out 0.5s;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.7s;
 `;
 
 export const AsideLeftBox = styled.aside`
@@ -116,6 +117,9 @@ export const AsideRightBox = styled(AsideLeftBox)`
       /* border:solid; */
       width: 17.5vw;
     }
+    img{
+      cursor:pointer;
+    }
     
     `;
 
@@ -173,9 +177,17 @@ export const ImdbIcon = styled.img`
   height: 2.74vh;
 `;
 
-export const MovieName = styled.img`
-  width: 18.31vw;
+export const MovieName = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size:${(props) => props.word.length > 5 ? '3.6vw':'7.5vw'} ;
+  font-family: "Chewy", sans-serif;
+  width: 19vw;
   height: 26.68vh;
+  /* border:solid; */
+  
 `;
 export const ImagesMovie = styled.figure`
   display: flex;
