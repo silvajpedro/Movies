@@ -16,10 +16,9 @@ export const MainBox = styled.main`
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  background-image: url(${(props) => props.mainBackImg || "https://sebrae.com.br/Sebrae/Portal%20Sebrae/resources/images/loading/sb-loading.gif"});
-  background-size: ${(props)=> props.mainBackImg ? '100% 100%':'25%'  };
+  background-image: url(${(props) => props.mainBackImg});
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: ${(props)=> props.mainBackImg ? "":"center"};
   transition: ease-in-out 0.7s;
 `;
 
