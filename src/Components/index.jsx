@@ -4,9 +4,7 @@ import { movies } from "./info_movies.jsx";
 
 // logos
 import logoDisney from "../assets/logo.png";
-import spiritLogo from "../assets/spirit_logo1.svg";
 import imdbIcon from "../assets/IMDB-icon.png";
-import luca_title from "../assets/luca.png";
 import menu from "../assets/hamburguer-menu.svg";
 
 export default function Index() {
