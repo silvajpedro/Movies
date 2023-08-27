@@ -21,7 +21,7 @@ export default function Index() {
           
           <S.FirstSectionAsideLeftBox>
             
-            <S.LogoDisney src={logoDisney} alt="disney icon" />
+            <S.LogoDisney src={logoDisney} alt="disney" />
 
             <div>
               <figure>
